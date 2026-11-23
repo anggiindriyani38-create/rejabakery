@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Roti Lezat — Katalog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#8B4513">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png">
+</head>
+<body>
+
+<!-- ==== HEADER ==== -->
+<header>
+    <div class="header-inner">
+        <h1>🍞 Toko Roti Lezat</h1>
+        <p>Rotinya Lembut, Rasanya Istimewa</p>
+    </div>
+</header>
+
+<!-- ==== NAVIGASI ==== -->
+<nav>
+    <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#keranjang" id="nav-keranjang">Keranjang (<span id="jumlah-keranjang">0</span>)</a></li>
+        <li><a href="login.html" class="btn-login">Admin</a></li>
+    </ul>
+</nav>
+
+<!-- ==== KONTEN UTAMA ==== -->
+<main class="container">
+
+    <!-- BERANDA -->
+    <section id="beranda" class="section">
+        <h2>Selamat Datang</h2>
+        <p class="text-center">Kami menyediakan berbagai macam roti segar yang baru dipanggang setiap pagi. Pilih roti favorit Anda dan pesan sekarang!</p>
+    </section>
+
+    <!-- PRODUK -->
+    <section id="produk" class="section">
+        <h2>Daftar Produk</h2>
+        <div class="produk-grid" id="daftar-produk"></div>
+    </section>
+
+    <!-- KERANJANG -->
+    <section id="keranjang" class="section keranjang-section">
+        <h2>Keranjang Belanja</h2>
+        <div id="isi-keranjang">
+            <p class="kosong">Keranjang masih kosong, silakan pilih produk terlebih dahulu</p>
+        </div>
+        <div class="total-bayar" id="total-bayar" style="display:none;">
+            Total: Rp <span id="total-harga">0</span>
+            <button class="btn-pesan" id="btn-checkout">Pesan Sekarang</button>
+        </div>
+    </section>
+
+    <!-- DAFTAR PESANAN -->
+    <section id="pesanan" class="section">
+        <h2>Riwayat Pesanan</h2>
+        <div id="daftar-pesanan">
+            <p class="kosong">Belum ada pesanan</p>
+        </div>
+    </section>
+
+</main>
+
+<!-- ==== FOOTER ==== -->
+<footer>
+    <p>&copy; 2026 Toko Roti Lezat | Jl. Kenangan No. 123, Surabaya | Telp: 0812-3456-7890</p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
